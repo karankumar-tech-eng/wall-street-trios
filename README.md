@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# 📈 Wall Street Trios Pro — Institutional Trading Terminal
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> A high-performance, institutional-grade web terminal built for multi-desk risk management, session analytics, and advanced trade journaling.
 
-Currently, two official plugins are available:
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live--Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://wall-street-trios.vercel.app)
+[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Tailwind-blue?style=for-the-badge&logo=react)](https://react.dev)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Production URL:** [https://wall-street-trios.vercel.app](https://wall-street-trios.vercel.app)
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🚀 Key Features
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### 🔐 PIN-Protected Multi-Desk Profiles
+- **Secure Switching:** Dedicated profile management for individual desk traders (**King**, **Mohit**, **Rakesh**).
+- **Enforced Security:** PIN-gated access ensuring desk isolation and data privacy.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 📓 Trade Execution Journal
+- **Full Telemetry Logging:** Record date, trader ID, asset class (Crypto, Forex, Indices), pair, entry setup, session, net R-multiple, and trade notes.
+- **Before/After Chart Attachments:** Upload high-resolution pre-trade and post-trade chart screenshots saved locally in `localStorage` as Base64 strings.
+- **Interactive Screenshot Preview:** In-app modal viewer for instant, side-by-side technical setup review.
+
+### 🧮 Integrated Position Sizer & Risk Calculator
+- Real-time lot size calculation based on account equity, percentage risk, entry price, and stop-loss levels.
+- Direct mathematical risk multiple integration for institutional execution tracking.
+
+### 📊 Real-Time Performance Analytics
+- Automated win-rate calculation, session attribution (New York, London, Asia), and net R-multiple tracking.
+- Visual status indicators (`WIN`, `LOSS`, `BE`) with live UI highlights.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React 18 + Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (Institutional Dark Slate Palette)
+- **Icons:** Lucide React
+- **Persistence:** Browser `localStorage` API
+- **Deployment Platform:** Vercel Continuous Integration (CI/CD)
+
+---
+
+## 💻 Local Installation & Setup
+
+Follow these steps to run the project locally on your machine:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/karankumar-tech-eng/wall-street-trios.git](https://github.com/karankumar-tech-eng/wall-street-trios.git)
+cd wall-street-trios
